@@ -32,7 +32,6 @@ class AuthService {
   Future<bool> isLoggedIn() async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getBool(_keyIsLoggedIn) ?? false;
-    
   }
 
   // Check if email is already registered
