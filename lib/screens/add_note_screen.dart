@@ -4,6 +4,7 @@ import 'package:image_picker/image_picker.dart';
 import '../models/note_model.dart';
 import '../db/database_helper.dart';
 
+
 class AddNoteScreen extends StatefulWidget {
   final Note? note;
   final VoidCallback onSave;
