@@ -32,6 +32,7 @@ class AuthService {
   Future<bool> isLoggedIn() async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getBool(_keyIsLoggedIn) ?? false;
+    
   }
 
   // Check if email is already registered
@@ -39,5 +40,6 @@ class AuthService {
     final prefs = await SharedPreferences.getInstance();
     final storedEmail = prefs.getString(_keyEmail);
     return storedEmail != null && storedEmail == email;
+
   }
 }
