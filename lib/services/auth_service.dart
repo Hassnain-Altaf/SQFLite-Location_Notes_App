@@ -39,6 +39,5 @@ class AuthService {
     final prefs = await SharedPreferences.getInstance();
     final storedEmail = prefs.getString(_keyEmail);
     return storedEmail != null && storedEmail == email;
-
   }
 }
